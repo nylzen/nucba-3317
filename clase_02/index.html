@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 2 - HTML</title>
+  </head>
+  <body>
+    <header>
+      <img src="https://via.placeholder.com/50" alt="Logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Seccion 1 -->
+      <section>
+        <h1>Bienvenidos a mi <span>pagina web</span></h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
+          vitae.
+        </p>
+        <a href="#">Contactame</a>
+      </section>
+      <!-- Otra seccion -->
+      <section>
+        <h2>Mis servicios</h2>
+        <!-- servicio 1 -->
+        <div>
+          <h2>Paginas web</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="#">Ver más sobre el servicio</a>
+        </div>
+        <!-- servicio 2 -->
+        <div>
+          <h2>Diseño</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </section>
+      <!-- Contacto -->
+      <section>
+        <h3>Contacto</h3>
+        <form>
+          <div>
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Lionel Messi"
+              name="name"
+              autofocus
+            />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="leomessi@domain.com" id="email" />
+          </div>
+
+          <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required min="0" max="10" />
+          </div>
+
+          <div>
+            <label for="pass">Contraseña</label>
+            <input type="password" />
+          </div>
+
+          <div>
+            <input type="checkbox" id="terminos" required />
+            <label for="terminos"
+              >Acepto los términos y condiciones <a href="#">Ver</a></label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" id="spam" checked />
+            <label for="spam">Desea recibir spam todos los dias</label>
+          </div>
+
+          <div>
+            <p>Gusto de helado favorito:</p>
+            <div>
+              <input type="radio" id="messi" name="gustos" />
+              <label for="messi">Messi</label>
+            </div>
+            <div>
+              <input type="radio" id="chocolate" name="gustos" />
+              <label for="chocolate">Chocolate</label>
+            </div>
+            <div>
+              <input type="radio" id="vainilla" name="gustos" />
+              <label for="vainilla">Vainilla</label>
+            </div>
+          </div>
+
+          <div>
+            <label for="juego">Jugar</label>
+            <select name="juego" id="juego">
+              <option value="piedra">Piedra</option>
+              <option value="papel ">Papel</option>
+              <option value="tijera">Tijera</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="mensaje">Mensaje:</label>
+            <br />
+            <textarea name="mensaje" id="mensaje" maxlength="20"></textarea>
+          </div>
+
+          <div>
+            <label for="tel">Telefono</label>
+            <input type="tel" id="tel" />
+          </div>
+
+          <input type="submit" value="Send" />
+          <input type="reset" />
+          <!-- <button>Enviar</button> -->
+        </form>
+      </section>
+      <hr />
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Paginas Messi</p>
+      <a href="#">Messi</a>
+    </footer>
+  </body>
+</html>
