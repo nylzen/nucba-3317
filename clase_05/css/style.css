@@ -1,0 +1,147 @@
+/* 
+Como llamo a las clases en CSS? => "."(punto)
+Como llamo a los ids en CSS? => "#" (Numeral)
+*/
+
+
+.container {
+    background-color: #282828;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 20px 0;
+    width: fit-content;
+}
+
+.caja {
+    width: 100px;
+    height:100px;
+    background-color: #6b7280;
+    border-radius: 1rem;
+    margin: 20px 0;
+}
+
+.caja-mediana {
+    width: 200px;
+    height:200px;
+    background-color: #e11d48;
+    border-radius: 1rem;
+    margin: 20px 0;
+    /* font-size: 10px; */
+}
+
+.caja-grande {
+    width: 300px;
+    height:300px;
+    background-color: #8c54fb;
+    border-radius: 1rem;
+    margin: 20px 0;
+}
+
+
+/* ================== */
+/* Selectores */
+#selectorId {
+    color: #8c54fb;
+}
+
+.selectorClase {
+    color: #e11d48;
+}
+
+h5 {
+    background: #8c54fb;
+}
+
+/* Unidades relativas */
+.em {
+    font-size: 2em;
+}
+
+.rem {
+ font-size: 2.1rem;
+}
+
+.porcentaje {
+    background-color: #8c54fb;
+    width: 50%;
+    height:50%;
+    border-radius: 1rem;
+}
+
+.vh {
+    background:#8c54fb;
+    height: 10vh;    
+    width: 10vw;
+}
+
+/* backgrounds */
+
+.bg-color {
+    background-color: crimson;
+}
+
+
+.bg-img {
+    background-image:url("../img/bg-pattern.jpg");
+    /*  */
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-repeat {
+    background-image: url('../img/bg-repeat.png');
+    background-repeat: no-repeat;
+}
+
+
+
+
+.bg-attach {
+    background-image: url('../img/bg-pattern.jpg');
+    background-attachment: fixed;
+}
+
+
+.color {
+    color: crimson;
+}
+
+
+/* Box Shadow */
+.caja-shadow {
+    width: 100px;
+    height:100px;
+    background:#8c54fb;
+    border-radius: 1rem;
+    margin: 20px 0;
+}
+
+.offsetXY {
+    box-shadow:10px 10px ;
+    
+
+}
+
+.blurRadius {
+    box-shadow:10px 10px 50px ;
+}
+
+.spreadRadius {
+    box-shadow:10px 10px 5px 5px;
+}
+
+.color-shadow {
+    box-shadow:10px 10px 5px 5px rgba(125, 152, 43, 0.544);
+}
+
+.inset {
+    box-shadow:inset 10px 10px 5px 5px rgba(125, 152, 43, 0.544);
+}
+
+/* Tipografias */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
+
+.font-family {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}

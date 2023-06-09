@@ -1,0 +1,17 @@
+/*
+selector {
+    propiedad: valor;
+ }
+*/
+
+h2 {
+    color:darkgoldenrod;
+}
+
+p {
+    color: green;
+}
+
+h1 {
+    color: cadetblue;
+}
