@@ -139,9 +139,39 @@ h5 {
 }
 
 /* Tipografias */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
 
 .font-family {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
+} */
+
+
+.font-family {
+    /* font-family: 'Kablammo', cursive; */
+    font-weight: 400;
+    /* font-style: italic; */
+    font-size: 1em;
+    /* letter-spacing: 20px; */
+    /* word-spacing: 20px; */
+    /* line-height: 20px; */
+    /* text-align: center; */
+    text-transform: lowercase;
+    /* text-decoration: underline; */
+}
+
+/* Listas */
+.list-none {
+    list-style-type: none;
+}
+
+.list-position {
+    list-style-type: circle ;
+    list-style-position:inside;
+    background-color: crimson;
+}
+
+.list-img {
+    list-style-image: url('../img/messi-list-img.jpg');
+    list-style-position: inside;
 }

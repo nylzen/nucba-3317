@@ -1,0 +1,164 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+
+.container {
+   background: #282828;
+   width: fit-content;
+   padding: 16px;
+   margin: 20px 0;
+   border-radius: 16px;
+}
+
+/* overflow */
+.overflow-box {
+    background: #8c54fb;
+    width: 100px;
+    height: 100px;
+}
+
+.hidden {
+    overflow: hidden
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.auto {
+    overflow: auto;
+}
+
+/* Padding */
+
+.padding {
+    background: #8c54fb;
+    /* padding: 20px; */
+    /* border: 1px solid red; */
+    /* padding-top: 20px; */
+    /* padding-right: 10px; */
+    /* padding-left: 50px; */
+    /* padding-bottom: 30px; */
+    /* Arriba y abajo \ Derecha izquierda */
+    /* padding: 20px 50px; */
+
+    /* Arriba a los costados y abajo */
+    padding: 20px 30px 50px;
+
+    /* shorthand  => Horario*/
+    padding:20px 30px 40px 20px ;
+
+}
+
+/* Border */
+
+.border {
+    border: 5px solid red;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.dashed {
+    border: 5px dashed crimson;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.dotted {
+    border: 5px dotted crimson;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.double {
+    border: 5px double crimson;
+    padding: 5px;
+}
+
+/* border radius */
+.radius {
+    background: #8c54fb;
+    padding: 10px;
+    border-radius: 8px 50px 0px 0px;
+}
+
+/* Margin */
+.box {
+    width: 100px;
+    height: 100px;
+    background: #8c54fb;
+    border-radius: 8px;
+}
+
+.margin {
+    margin: 20px 0;
+    /* Tambien funciona el shorthand del padding aca */
+}
+
+/* Css layout */
+/* display block, le puedo dar alto y ancho */
+.block {
+    background: crimson;
+    display: block;
+    height: 50px;
+}
+
+
+/* display inline no puedo dar un alto y un anccho */
+.inline {
+    display: inline;
+    height: 200px;
+    background: #8c54fb;
+    margin: 32px 0;
+}
+
+
+/* Este es un test */
+.test {
+    background: crimson;
+    display: inline-block;
+    height: 200px;
+}
+
+/* Positions */
+.relative {
+    background: crimson;
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
+
+.absolute-container {
+   background: #282828;
+   width: fit-content;
+   padding: 16px;
+   margin: 20px 0;
+   border-radius: 16px;
+   position: relative;
+}
+
+.absolute {
+    background: crimson;
+    position: absolute;
+    left: 50px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.whatsapp{
+    background: greenyellow;
+    color: #282828;
+    font-weight: 900;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
