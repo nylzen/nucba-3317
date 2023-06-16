@@ -1,0 +1,300 @@
+.container {
+    background: #282828;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 20px 0;
+}
+
+/* Cajas */
+.caja-flex {
+    background: #8c54fb;
+    width: 100px;
+    height:100px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-reverse {
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 250px;
+}
+
+.no-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 250px;
+    gap: 10px;
+}
+
+/* flex flow */
+.flow {
+    display: flex;
+    gap: 10px;
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    flex-flow: row nowrap;
+    max-width: 250px;
+}
+
+/* justify content */
+.jc-start {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.jc-end {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.jc-center {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.jc-between {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.jc-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.jc-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* align items */
+.column-container {
+    background: #282828;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 20px 0;
+    min-height: 600px;
+}
+
+.ai-start {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.ai-end {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.ai-center {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.caja-flex-stretch {
+    background: crimson;
+    /* height: 100px; */
+    width: 100px;
+}
+
+.ai-stretch {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+
+.caja-flex-baseline {
+    width: 100px;
+    align-items: baseline;
+    padding: 1rem;
+}
+
+.ai-baseline {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.baseline-1{
+    padding-top: 30px;
+    background: crimson;
+}
+.baseline-2{
+    padding-top: 100px;
+    background: #8c54fb;
+}
+.baseline-3{
+    padding-top: 50px;
+    background: crimson;
+}
+
+
+/* align content */
+.ac-container {
+    height: 450px;
+    background: #282828;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 20px 0;
+    max-width: 330px;
+    flex-wrap: wrap;
+}
+
+.ac-start {
+    display: flex;
+    gap: 10px;
+    align-content: flex-start;
+}
+
+
+.ac-end {
+    display: flex;
+    align-content: flex-end;
+    gap: 10px;
+}
+
+
+.ac-center {
+    display: flex;
+    align-content: center;
+    gap: 10px;
+}
+
+.ac-between {
+    display: flex;
+    align-content: space-between;
+    gap: 10px;
+}
+
+.ac-around {
+    display: flex;
+    align-content: space-around;
+    gap: 10px
+}
+
+.ac-stretch {
+
+    display: flex;
+    width: fit-content;
+    align-content: stretch;
+    height: fit-content;
+    gap: 10px;
+    
+}
+
+.caja-stretch {
+    width: auto;
+}
+
+/* elementos hijos */
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+/* order */
+.order-1{
+    order: 3 ;
+}
+.order-2{
+    order: 1;
+}
+.order-3{
+    order: 2;
+}
+
+/* grow */
+
+.grow-1 {
+    flex-grow: 2;
+}
+
+.grow-2{
+    flex-grow: 1;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+/* shrink */
+.contenedor-shrink {
+    max-width: 200px
+}
+
+.shrink-1 {
+    flex-shrink: 0;
+}
+
+/* .shrink-2 {
+    flex-shrink: 2;
+}
+
+.shrink-3 {
+    flex-shrink: 1;
+} */
+
+/* basis */
+.basis-1 {
+    flex-basis: 200px;
+}
+.basis-2 {
+    flex-basis: 400px;
+}
+
+.basis-3 {
+    flex-basis: 50px;
+}
+
+/* align self */
+.self {
+     justify-content: center;
+     align-items: center;
+     height: 500px; 
+}
+
+.self-1 {
+    align-self: flex-start;
+}
+
+.self-2 {
+    /* align-self: center; */
+}
+
+.self-3 {
+    align-self: flex-end;
+}
