@@ -305,3 +305,39 @@ main {
 .discover-cards img {
   width: 30%;
 }
+
+/*  =========== PRODUCTOS SECTION ===========  */
+#products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+#products h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.category {
+  background: var(--btn-lg);
+  border: none;
+  padding: 10px 15px;
+  color: var(--text-white);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--primary);
+}
