@@ -29,6 +29,7 @@
   text-decoration: none;
   list-style: none;
   font-family: 'Poppins', sans-serif;
+  /* border: 1px solid red; */
 }
 
 /*  =========== HEADER ===========  */
@@ -255,3 +256,52 @@ main {
 }
 
 /*  =========== DESCUBRE SECTION ===========  */
+#discover {
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.discover-info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.discover-info h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  width: 45%;
+}
+
+.discover-text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.discover-text p {
+  color: var(--text-gray);
+}
+
+.discover-text a {
+  color: var(--text-white);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.discover-cards {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.discover-cards img {
+  width: 30%;
+}
