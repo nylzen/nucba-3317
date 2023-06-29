@@ -42,8 +42,22 @@ header {
   height: 65px;
   position: fixed;
   width: 100%;
-  /* FALTA HACER ALGO */
+  z-index: 2;
 }
+
+/* Sticky */
+/* header {
+  background: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 65px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+} */
 
 .navbar,
 .navbar-list {
