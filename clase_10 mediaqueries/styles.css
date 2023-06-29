@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* bg colors */
+  --black: #02050e;
+  --grey: #272d37;
+  --white: #f0fbff;
+  --blue: #0c1221;
+  --red: #b21c05;
+  --green: #168208;
+  --yellow: #ffff00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: var(--black);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 90%;
+  width: 90%;
+  background-color: var(--grey);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gradientes Fondo */
+.caja1 {
+  background: radial-gradient(#f69d3c, #3f87a6);
+  /* background: repeating-linear-gradient(#f69d3c, #3f87a6 100px); */
+  /* background: linear-gradient(190deg, black, white); */
+  /* background: linear-gradient(to right, white, #3f87a6, orange, blue, red); */
+  /* background: rgb(14, 0, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(14, 0, 255, 1) 0%,
+    rgba(255, 237, 0, 1) 48%,
+    rgba(14, 0, 255, 1) 100%
+  );
+  background: rgb(14, 0, 255);
+  background: radial-gradient(
+    circle,
+    rgba(14, 0, 255, 1) 0%,
+    rgba(255, 237, 0, 1) 48%,
+    rgba(14, 0, 255, 1) 100%
+  ); */
+}
+
+/* Textos */
+.caja2 {
+  background: linear-gradient(to right, black, green);
+  /* color: transparent; */
+  /* background-clip: text; */
+  /* -webkit-background-clip: text; */
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+/* Ambos */
+.caja3 {
+  background: #c33764; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1d2671,
+    #c33764
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1d2671,
+    #c33764
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.caja3 span {
+  font-weight: 800;
+  font-size: 2rem;
+  background: #f7971e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffd200, #f7971e);
+  background: linear-gradient(to right, #ffd200, #f7971e);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
