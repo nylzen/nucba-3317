@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   /* bg colors */
@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   list-style-type: none;
 }
@@ -49,4 +49,48 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* media queries */
+@media (min-width: 576px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .caja {
+    background: skyblue;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+
+  .caja2 {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    flex-direction: row;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .caja {
+    width: 150px;
+    height: 150px;
+  }
+
+  .caja2 {
+    /* display: flex; */
+    align-self: flex-start;
+  }
 }

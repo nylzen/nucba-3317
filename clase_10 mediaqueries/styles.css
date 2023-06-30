@@ -107,3 +107,66 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
 }
+
+/* @media (tanto) {
+  reemplazar los estios que necesito
+} */
+
+/*  */
+@media (max-width: 1200px) {
+  body {
+    background: #c33764;
+  }
+
+  .container {
+    background: #ffd200;
+  }
+
+  .caja {
+    background: red;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    background: #1d2671;
+  }
+  .container {
+    background: #168208;
+  }
+}
+
+@media (max-width: 768px) {
+  .caja1 {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
+
+  .caja2 {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
+
+  .caja3 span {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    flex-direction: column;
+  }
+}
