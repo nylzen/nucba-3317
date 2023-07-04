@@ -34,7 +34,8 @@
 
 /*  =========== HEADER ===========  */
 header {
-  background: var(--secondary);
+  /* background: var(--secondary); */
+  background: linear-gradient(to bottom, #121e3c, var(--background));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,10 +91,122 @@ header {
   color: var(--text-white);
 }
 
+/*  =========== CARRITO ===========  */
+/* Ocultamos el input:checkbox */
+#cart-toggle {
+  display: none;
+}
+
 .cart-icon {
   padding: 5px 10px;
   height: 30px;
   cursor: pointer;
+}
+
+.cart {
+  position: absolute;
+  right: 0;
+  top: 65px;
+  background: linear-gradient(to top, #121e3c, var(--background));
+  padding: 50px 30px;
+  border-left: 1px solid var(--nav-bg);
+  height: calc(100vh - 65px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: scroll;
+  display: none;
+}
+
+.cart h2 {
+  color: var(--text-white);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid var(--electric);
+  background: #2323238a;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.item-title {
+  color: var(--text-white);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item-bid {
+  color: var(--text-gray);
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.item-price {
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 800;
+}
+
+.item-handler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.quantity-handler {
+  color: var(--text-white);
+  padding: 2px 8px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid var(--electric);
+}
+
+.down {
+  background: var(--secondary);
+}
+
+.item-quantity {
+  color: var(--text-gray);
+}
+
+.divider {
+  margin-top: 20px;
+  border: 0.5px solid var(--electric);
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-white);
+}
+
+.cart-total p {
+  font-weight: 700;
+}
+
+.cart-total span {
+  font-size: 18px;
+}
+
+/* ACA HACEMOS FUNCIONAL EL CARRITO */
+#cart-toggle:checked + .cart {
+  display: flex;
 }
 
 /*  =========== HERO SECTION ===========  */
@@ -130,6 +243,10 @@ main {
   font-weight: 800;
   width: 80%;
   min-width: 500px;
+  background: linear-gradient(to top, #30cfd0, #c43ad6);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .hero-info p {

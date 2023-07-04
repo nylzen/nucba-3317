@@ -20,13 +20,95 @@
           <li><a href="#">Contactanos</a></li>
         </ul>
         <!-- Carrito -->
-        <img
-          src="./assets/img/cart-icon.svg"
-          alt="Carrito de compras"
-          class="cart-icon"
-        />
+        <!-- Agregamos input y label para la funcionalidad del carrito -->
+        <label for="cart-toggle" class="cart-label">
+          <img
+            src="./assets/img/cart-icon.svg"
+            alt="Carrito de compras"
+            class="cart-icon"
+          />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <!-- Agregar el carrito  -->
+        <!-- <p>hola</p> NO funciona con el + pero si con ~ -->
+        <div class="cart">
+          <h2>Tus NFTs</h2>
+
+          <!-- Producto -->
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="Nft del carrito" />
+            <!-- Info del producto -->
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">4.8 ETH</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="Nft del carrito" />
+            <!-- Info del producto -->
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">4.8 ETH</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="Nft del carrito" />
+            <!-- Info del producto -->
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">4.8 ETH</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="Nft del carrito" />
+            <!-- Info del producto -->
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">4.8 ETH</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+
+          <!-- Divisor -->
+          <span class="divider"></span>
+
+          <div class="cart-total">
+            <p>Total:</p>
+            <span>18.3 ETH</span>
+          </div>
+
+          <button class="btn-add">Comprar</button>
+        </div>
       </nav>
     </header>
+
     <main>
       <!-- Hero -->
       <section id="hero">
