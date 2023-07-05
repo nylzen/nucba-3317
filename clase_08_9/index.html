@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nucba NFT</title>
     <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Linkeamos archivo mediaqueries -->
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
   </head>
   <body>
     <header>
@@ -12,6 +14,12 @@
 
       <!-- Nav -->
       <nav class="navbar">
+        <!-- Agregamos el input y label para la funcionalidad del menu -->
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/img/menu.png" alt="menu-icon" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+
         <ul class="navbar-list">
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#info">Descubre</a></li>
@@ -35,6 +43,21 @@
           <h2>Tus NFTs</h2>
 
           <!-- Producto -->
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="Nft del carrito" />
+            <!-- Info del producto -->
+            <div class="item-info">
+              <h3 class="item-title">Messi</h3>
+              <p class="item-bid">Current bid</p>
+              <span class="item-price">4.8 ETH</span>
+            </div>
+            <!-- Botones -->
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
           <div class="cart-item">
             <img src="./assets/img/cart/cart-img.png" alt="Nft del carrito" />
             <!-- Info del producto -->

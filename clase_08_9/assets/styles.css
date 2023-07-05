@@ -93,7 +93,13 @@ header {
 
 /*  =========== CARRITO ===========  */
 /* Ocultamos el input:checkbox */
-#cart-toggle {
+#cart-toggle,
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+
+.cart::-webkit-scrollbar {
   display: none;
 }
 
@@ -360,6 +366,7 @@ main {
 .info-cards-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -477,6 +484,7 @@ main {
 .products-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
 }
 
