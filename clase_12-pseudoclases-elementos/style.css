@@ -1,0 +1,105 @@
+.container {
+  background: #282828;
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.hover {
+  background: crimson;
+  padding: 10px;
+  border-radius: 1rem;
+  transition: all 0.5s;
+}
+
+.hover:hover {
+  background-color: #8c54fb;
+  font-size: 2rem;
+}
+
+.active {
+  transition: all 0.5s;
+}
+.active:active {
+  color: crimson;
+  background-color: blue;
+  font-size: 5rem;
+}
+
+.visited:visited {
+  color: green;
+}
+
+.link:link {
+  color: crimson;
+}
+
+.focus-input {
+  padding: 5px 10px;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.focus-input:focus {
+  background: crimson;
+  /* border: 1px solid greenyellow; */
+  outline: 2px solid greenyellow;
+  color: white;
+  font-size: 2rem;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first .caja:first-child {
+  background: #8c54fb;
+}
+
+.last .caja:last-child {
+  background-color: #8c54fb;
+  /* width: 200px; */
+  /* height: 200px; */
+}
+
+.first-of-type .caja:first-of-type {
+  background-color: #8c54fb;
+}
+
+.nth-child-odd .caja:nth-child(odd) {
+  background-color: #8c54fb;
+}
+
+.nth-child-even .caja:nth-child(even) {
+  background-color: #8c54fb;
+  width: 200px;
+}
+
+.nth-child-number .caja:nth-child(2) {
+  background-color: #8c54fb;
+  width: 200px;
+}
+
+.nth-child-number-n .caja:nth-child(3n) {
+  background-color: #8c54fb;
+  width: 200px;
+}
+
+.nth-child-number-n-number .caja:nth-child(2n + 4) {
+  background-color: #8c54fb;
+  width: 200px;
+}
