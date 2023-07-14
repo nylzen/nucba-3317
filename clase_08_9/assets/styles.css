@@ -106,6 +106,8 @@ header {
 .cart-icon {
   padding: 5px 10px;
   height: 30px;
+  font-size: 1.1rem;
+  color: var(--text-white);
   cursor: pointer;
 }
 
@@ -121,7 +123,12 @@ header {
   flex-direction: column;
   gap: 30px;
   overflow-y: scroll;
-  display: none;
+  /* display: none; */
+  transform: translate(200%);
+  /* translate: 200%; */
+  transition: all .5s ease-in-out;
+  /* transition: all .5s cubic-bezier(.36,.64,.83,.67); */
+  z-index: 2;
 }
 
 .cart h2 {
@@ -212,7 +219,8 @@ header {
 
 /* ACA HACEMOS FUNCIONAL EL CARRITO */
 #cart-toggle:checked + .cart {
-  display: flex;
+  /* display: flex; */
+  transform:translate(0) ;
 }
 
 /*  =========== HERO SECTION ===========  */

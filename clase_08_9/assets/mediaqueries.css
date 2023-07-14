@@ -8,6 +8,7 @@
     height: 33px;
   }
 
+
   .navbar-list {
     position: absolute;
     top: 65px;
@@ -21,7 +22,10 @@
     border-radius: 0px 0px 15px 15px;
     padding: 45px 30px;
     align-items: flex-start;
-    display: none;
+    /* display: none; */
+    transform: translateX(-200%);
+    transition: all .5s ease-in-out;
+    z-index: 2;
   }
 
   .navbar-list a {
@@ -40,6 +44,7 @@
   }
 
   #menu-toggle:checked + .navbar-list {
+    transform: translateX(0);
     display: flex;
   }
 
