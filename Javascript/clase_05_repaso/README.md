@@ -45,5 +45,3 @@ Escribe una función que verifique la entrada/parámetro proporcionado:
 ### Ejercicio 10: Contador Regresivo Personalizado
 
 Escribe un programa que tome un número como entrada y genere un contador regresivo desde ese número hasta 1. Muestra cada número del contador en una línea separada.
-
-function (velocidad) {}
