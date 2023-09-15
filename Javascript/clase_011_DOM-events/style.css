@@ -1,0 +1,19 @@
+.messi {
+  display: block;
+  width: 100%;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 30px;
+}
+
+.ocultar {
+  opacity: 0;
+}
+
+.border {
+  border-radius: 10px;
+}

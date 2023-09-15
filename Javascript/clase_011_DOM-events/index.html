@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://res.cloudinary.com/dwmqwjm3y/raw/upload/v1676574202/nucba/stylescdn_u7mjb9.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>2.11 Eventos del DOM</title>
+  </head>
+  <body>
+    <header>
+      <h1>2.11 Eventos del DOM</h1>
+      <p>Conocer e implementar distintas formas para la manipulación del DOM</p>
+      <h2>Recursos de la clase:</h2>
+      <ul>
+        <li>
+          📌<a href="https://developer.mozilla.org/es/docs/Web/Events"
+            >Eventos</a
+          >
+        </li>
+      </ul>
+    </header>
+    <main>
+      <hr class="hr" />
+      <!-- onclick / atributo -->
+      <h3 onclick="alert('Estoy haciendo click desde el atributo')">
+        Clickeamee
+      </h3>
+
+      <!-- Desde js evento -->
+      <h3 id="h3Alert">A ver que pasa?</h3>
+      <hr class="hr" />
+      <!-- blur / focus -->
+      <h3>Focus/Blur</h3>
+      <input type="text" id="inputBlur" placeholder="Ingresa algo" />
+
+      <hr class="hr" />
+      <!-- Change -->
+      <h3>Change</h3>
+      <input type="text" id="inputChange" placeholder="Pone algo" />
+
+      <!-- event -->
+      <h3>Event</h3>
+      <button class="btn">Holis</button>
+
+      <hr class="hr" />
+      <h3>e.preventDefault()</h3>
+      <form class="form">
+        <input type="text" placeholder="Nombre" class="inputForm" />
+        <button>Manda</button>
+      </form>
+
+      <hr class="hr" />
+
+      <div class="parent">
+        <div>
+          <h3 class="child">hola como va</h3>
+          <p>Tuki</p>
+        </div>
+      </div>
+
+      <hr class="hr" />
+      <div class="container">
+        <h3>Mostrar y ocultar usando .style</h3>
+        <img src="./img/messi.avif" alt="" class="messi border" />
+        <div class="btns">
+          <!-- <button class="btn" id="show">Mostrar</button> -->
+          <!-- <button class="btn" id="hide">Ocultar</button> -->
+          <!-- <button id="toggle">Mostrar</button> -->
+          <!-- <button id="addClass">Agrega clase</button> -->
+          <button id="cambiarSrc">Cambiar Imagen</button>
+        </div>
+      </div>
+
+      <hr class="hr" />
+
+      <div class="contador">
+        <h3>Contador</h3>
+        <button id="restar">disminuir</button>
+        <span id="contador">0</span>
+        <button id="sumar">aumentar</button>
+      </div>
+    </main>
+
+    <!-- scripts -->
+    <script src="./main.js"></script>
+  </body>
+</html>
